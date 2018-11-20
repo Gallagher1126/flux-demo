@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="display: flex;flex-direction:column;justify-items: center;align-items: center">
+  <div style="margin: auto auto;display: flex;flex-direction: column">
+    <input type="number" maxlength="20" placeholder="请输入账号" [(ngModel)]="userName"/>
+    <input type="text" maxlength="aa" placeholder="请输入账号" [(ngModel)]="passWord"/>
+  </div>
+  <div style="flex-direction: row;display: flex;align-items: center" (click)="login()">
+    <label style="color: #2d2d2d;font-size: 1.5rem">登录</label>
+  </div>
+</ion-content>
